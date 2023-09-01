@@ -1,0 +1,37 @@
+{{#if usuarios}}
+  <h1  style="font-size: 2vw; color: white">Administrador</h1>
+<h2  style="font-size: 1.5vw; color: white">Usuarios del Sistema</h2>
+<div class="table-responsive">
+  <table class="table table-bordered table-hover table-dark table-sm">
+    <thead>
+      <tr>
+        <th>Usuario</th>
+        <th>Nombre</th>
+        <th>Tipo</th>
+        <th>email </th>
+        <th>Estatus</th>
+        <th>Accion</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each usuarios}}
+        <tr>
+
+          <td>{{usuario}}</td>
+          <td>{{name}} {{apellido}}</td>
+          <td>{{tipo_usuario}}</td>
+          <td>{{email}}</td>
+          <td>{{user_status}}</td>
+          <td>
+              <a href="/usuarios/edit/{{_id}}"><i class="fas fa-user-check" style="color: white;"></i></a>
+     <!--         <a href="/usuarios/bloquear/{{_id}}"><i class="fas fa-user-lock" style="color: white;"></i></a>
+              <a href="/usuarios/rechazar/{{_id}}"><i class="fas fa-user-alt-slash" style="color: white;"></i></a>
+              <a href="/usuarios/visualizar/{{_id}}"><i class="fas fa-search" style="color: white;"></i></a> -->
+          </td>
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
+
+     <a href="/usuarios/add" class="btn btn-info" style="font-size: 1.5vw">crear un Nuevo usuario</a>
+{{/if}}

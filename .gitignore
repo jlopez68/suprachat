@@ -1,0 +1,10 @@
+# Nodejs
+node_modules
+fapasa.pem
+server-6.0.asc
+
+# environment variables
+.env
+
+## dist
+dist

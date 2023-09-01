@@ -1,0 +1,98 @@
+<div class="col-md-6 mx-auto" style="opacity: 0.8;">
+  <div class="card">
+    <div class="card-header bg-dark text-center">
+      <h3 class="text-white">Datos del Medico</h3>
+    </div>
+    <div class="card-body text-right">
+      <form action="/notes/new-note" method="POST">
+
+
+          <div class="mb-3">
+            <label for="title">Nombre:</label>
+            <input type="text" class="form-control bg-ligth " name="title" placeholder="Nombre" value="{{title}}"        autofocus/>
+          </div>
+          <div class="mb-3">
+            <label for="descripcion">Apellido:</label>
+            <input type="text" class="form-control bg-ligth" name="description" placeholder="Apellido" value="{{description}}"       autofocus/>
+          </div>
+                    <div class="mb-3">
+            <label for="registro">Numero Registro:</label>
+            <input type="text"  class="form-control bg-ligth" name="registro" placeholder="registro" value="{{registro}}"        autofocus/>
+          </div>
+             <div class="mb-3">
+            <label for="num_doc">Numero RUC:</label>
+            <input type="text"  class="form-control bg-ligth" name="num_doc"  placeholder="Numero documento" value="{{num_doc}}" />
+          </div>
+          <div class="mb-3">
+            <label for="celular">Numero Celular:</label>
+            <input type="text"  class="form-control bg-ligth" name="celular" placeholder="celular" value="{{medicamento}}"        autofocus/>
+          </div>
+          <div class="mb-3">
+            <label for="email">Email:</label> 
+            <input  type="email"  class="form-control bg-ligth"  name="email"  placeholder="Email"  value="{{email}}"       autofocus />
+          </div>
+          <div class="mb-3">
+          <label for="description">Direccion</label>
+            <input
+            type="text"
+            name="direccion"
+            class="form-control"
+            value="{{direccion}}"
+            autofocus
+          />
+        </div> 
+                        <div class="mb-3">
+          <label for="description">Calle que Cruza</label>
+            <input
+            type="text"
+            name="calle"
+            class="form-control"
+                        value="{{calle}}"
+            autofocus
+          />
+        </div>
+         <div class="mb-3">
+          <label for="description">Ciudad o Barrio</label>
+            <input
+            type="text"
+            name="barrio"
+            value="{{barrio}}"
+            class="form-control"
+            autofocus
+          />
+        </div>
+               <div class="mb-3">
+              <label for="horario_ent" class="form-label ">Horario de Entrega</label>
+              <select id="horario_ent" name="horario_ent" class="form-select" >
+                <option value="8:00 AM" selected>8:00 AM</option>
+                <option value="8:30 AM" selected>8:30 AM</option>
+                 <option value="9:00 AM" selected>9:00 AM</option>
+                <option value="9:30 AM" selected>9:30 AM</option>
+                <option value="10:00 AM" selected>10:00 AM</option>
+                <option value="10:30 AM" selected>10:30 AM</option>
+                <option value="11:00 AM" selected>11:00 AM</option>
+                <option value="11:30 AM" selected>11:30 AM</option>
+                <option value="12:00 M" selected>12:00 M</option>
+                <option value="12:30 M" selected>12:30 M</option>
+                <option value="1:00 PM" selected>1:00 PM</option>
+                <option value="1:30 PM" selected>1:30 PM</option>
+                <option value="2:00 PM" selected>2:00 PM</option>
+                <option value="2:30 PM" selected>2:30 PM</option>
+                <option value="3:00 PM" selected>3:00 PM</option>
+                <option value="3:30 PM" selected>3:00 PM</option>
+                <option value="4:00 PM" selected>4:00 PM</option>
+               <option value="4:30 PM" selected>4:30 PM</option>
+               <option value="5:00 PM" selected>5:00 PM</option>
+               <option value="5:30 PM" selected>5:30 PM</option>
+               <option value="6:00 PM" selected>6:00 PM</option>
+               <option value="6:30 PM" selected>6:30 PM</option>
+               
+              </select>
+          </div>
+        <button class="btn btn-primary w-100" type="submit">
+          Save
+        </button>
+      </form>
+    </div>
+  </div>
+</div>

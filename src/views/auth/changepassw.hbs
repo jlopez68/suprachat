@@ -1,0 +1,50 @@
+<div class="row">
+  <div class="col-md-4 mx-auto">
+    <div class="card bg-black text-white">
+      <div class="card-header pt-5">
+        <h4 class="text-center">
+          Cambio de Password
+        </h4>
+      </div>
+      <div class="card-body">
+        <form action="/auth/change" method="POST">
+          <div class="mb-3">
+            <label for="usuario">Usuario:</label>
+            <input
+              type="text"
+              class="form-control bg-dark text-white"
+              name="usuario"
+              placeholder="Usuario"
+              value="{{usuario}}" readonly
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="password">Nuevo Password</label>
+            <input
+              type="password"
+              class="form-control bg-dark text-white"
+              name="password"
+              placeholder="Nuevo Password"
+              value="{{password}}"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="confirm_password">Confirme Password:</label>
+            <input
+              type="password"
+              class="form-control bg-dark text-white"
+              name="confirm_password"
+              placeholder="Confirme Password"
+              value="{{confirm_password}}"
+            />
+          </div>
+              <input type="hidden" name="cambio_password" value="1" />
+          <button class="btn btn-success btn-block">
+            Aceptar
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </div>

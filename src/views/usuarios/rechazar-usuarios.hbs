@@ -1,0 +1,57 @@
+<div class="row">
+  <div class="col-md-6 mx-auto">
+    <div class="card bg-dark text-white">
+      <div class="card-header pt-5">
+        <h4 class="text-center">
+          Rechazar datos del Medico
+        </h4>
+        <br>
+        <form action="/usuarios/rechazar-usuarios/{{usuarios._id}}?_method=PUT" method="POST">
+        <input type="hidden" name="_method" value="PUT" />
+
+      <div class="card-body">
+
+          <div class="mb-3">
+            <label for="name">Nombre:</label>
+            <input type="text" class="form-control bg-ligth " name="name" placeholder="Nombre" value="{{usuarios.name}}" readonly/>
+          </div>
+          <div class="mb-3">
+            <label for="apellido">Apellido:</label>
+            <input type="text" class="form-control bg-ligth" name="apellido" placeholder="Apellido" value="{{usuarios.apellido}}" readonly/>
+          </div>
+            <div class="mb-3">
+            <label for="tip_doc">Tipo Documento:</label>
+            <input type="text" class="form-control bg-ligth" name="tip_doc" placeholder="Tipo Documento" value="{{usuarios.tip_doc}}" readonly/>
+          </div>
+          <div class="mb-3">
+            <label for="num_doc">Numero Documento:</label>
+            <input type="text"  class="form-control bg-ligth" name="num_doc"  placeholder="Numero documento" value="{{usuarios.num_doc}}" readonly />
+          </div>
+          <div class="mb-3">
+            <label for="registro">Numero Registro:</label>
+            <input type="text"  class="form-control bg-ligth" name="registro" placeholder="registro" value="{{usuarios.registro}}" readonly/>
+          </div>
+          <div class="mb-3">
+            <label for="celular">Numero Celular:</label>
+            <input type="text"  class="form-control bg-ligth" name="celular" placeholder="celular" value="{{usuarios.celular}}"readonly />
+          </div>
+          <div class="mb-3">
+            <label for="email">Email:</label> 
+            <input  type="email"  class="form-control bg-ligth"  name="email"  placeholder="Email"  value="{{usuarios.email}}" readonly/>
+          </div>
+            <div class="mb-3">
+            <label for="user_status_motivo">Motivo de Rechazo:</label>
+            <textarea
+            name="user_status_motivo"
+            class="form-control"
+          >{{usuarios.user_status_motivo}}</textarea>
+          </div>
+      </div>
+     <input type="hidden" name="user_status" value="Rechazado" />
+          <button class="btn btn-success btn-block">Rechazar</button>
+        </form>
+
+      </div>
+    </div>
+  </div>
+</div>

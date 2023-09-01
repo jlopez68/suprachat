@@ -1,0 +1,88 @@
+
+
+.logo {
+  width: 20%;
+}
+
+.bg-black {
+  background: #cad5ad;
+} 
+
+.tooltip-inner {
+  background-color: #045477;
+}
+
+.tooltip.bottom .tooltip-arrow {
+  top: 0;
+  left: 50%;
+  margin-left: -5px;
+  border-bottom-color: #045477; /* black */
+  border-width: 0 5px 5px;
+}
+
+.text-platzi {
+  color: #97c93e !important;
+}
+
+.btn-platzi {
+  background-color: #97c93e;
+  color: white;
+}
+
+.btn-platzi:hover {
+  background-color: #82ad36;
+}
+
+#header img {
+  width: 40%; 
+}
+
+#main .carousel-inner img {
+  max-height: 70vh;
+  object-fit: cover;
+ /* filter: grayscale(70%); */
+}
+
+#carousel {
+  position: relative;
+}
+
+#carousel .overlay {
+  position: absolute;
+  top: 5;
+  bottom: 0;
+  left: 0;
+  right: 0;
+ /* background-color: rgba(0, 0, 0, 0.5);*/
+  color: white;
+}
+
+#carousel .overlay .container,
+#carousel .overlay .row {
+  height: 100%;
+}
+
+#place-time {
+ /* background-color: #343a40;*/
+  color: black;
+}
+
+#place-time img {
+  max-width: 100%;
+  border-radius:15px;
+}
+
+td {
+font-size: 1.5vw;
+}
+th {
+  font-size: 1.5vw;
+  }
+
+  .table {
+    opacity: 0.8;
+  }
+
+  .container{
+    flex-direction: column-reverse;
+  }

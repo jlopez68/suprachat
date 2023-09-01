@@ -1,0 +1,49 @@
+<div class="row" style="opacity: 0.8;">
+  <div class="col-md-6 mx-auto">
+    <div class="card bg-dark text-white">
+      <div class="card-header pt-5">
+        <h4 class="text-center">
+          Registro del Usuario
+        </h4>
+
+        <form action="/auth/signup" method="POST">
+<div id="myTabContent" class="tab-content">
+  <div class="tab-pane fade show active" id="home" role="tabpanel">
+      <div class="card-body">
+
+          <div class="mb-3">
+            <label for="name">Nombre:</label>
+            <input type="text" class="form-control bg-ligth " name="name" placeholder="Nombre" value="{{name}}"/>
+          </div>
+          <div class="mb-3">
+            <label for="apellido">Apellido:</label>
+            <input type="text" class="form-control bg-ligth" name="apellido" placeholder="Primer Apellido" value="{{apellido}}"/>
+          </div>
+          <div class="mb-3">
+            <label for="celular">Numero Celular:</label>
+            <input type="text"  class="form-control bg-ligth" name="celular" placeholder="celular" value="{{celular}}" />
+          </div>
+          <div class="mb-3">
+            <label for="email">Email:</label> 
+            <input  type="email"  class="form-control bg-ligth"  name="email"  placeholder="Email"  value="{{email}}" />
+          </div>
+     
+
+      </div>
+ 
+ 
+  </div>
+
+
+</div>
+          <button class="btn btn-success btn-block">
+            Registro
+          </button>
+        </form>
+        </form>
+      </div>
+
+
+    </div>
+  </div>
+</div>

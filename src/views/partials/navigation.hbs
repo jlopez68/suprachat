@@ -1,0 +1,62 @@
+<!--<nav class="navbar navbar-expand-lg navbar-dark p-2 bg-black">-->
+    <nav id="header" class="navbar navbar-expand-lg navbar-light "   >
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img style="width: 50%;"  src="/img/logo-fapasa-gris.svg" >
+              </a>
+     </div>
+
+  <div class="container">
+
+
+    <div  id="navbarNav">
+
+      <ul class="navbar-nav ms-auto">
+        {{#if user}}
+           {{#if fm}}
+
+             <li class="nav-item">
+              <a class="nav-link" href="/auth/logout">Salir</a>
+            </li>
+
+            {{else}}
+            {{#if tp}}
+            <li class="nav-item">
+              <a class="nav-link" href="/notes">Medicos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/notes/add">Cargar Medicos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/auth/logout">Salir</a>
+            </li>
+
+            {{else}}
+              <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"> PROCESOS</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="/notes">Medicos</a>
+              <a class="dropdown-item" href="/notes/imprimir">Reporte de Medicos</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="/usuarios">Usuarios</a> 
+              <a class="dropdown-item" href="/usuarios/imprimir">Resporte de Usuarios</a>
+              <div class="dropdown-divider"></div>          
+              <a class="dropdown-item" href="/auth/logout">Salir</a>
+            </ul>
+          </li>
+          {{/if}}
+           {{/if}}
+        {{else}}
+            <li class="nav-item">
+              <a class="nav-link" href="/auth/signin">Ingresar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/auth/signup">Registrar Usuario</a>
+            </li>
+
+          
+        {{/if}}
+      </ul>
+    </div>
+  </div>
+</nav>

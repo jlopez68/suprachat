@@ -1,0 +1,44 @@
+<div class="row" style=" opacity: 0.8;">
+  <div class="col-md-4 mx-auto">
+    <div class="card mt-5  rounded">
+      <div class="card-header text-center pt-5">
+        <h1 class="h4 ">
+          Ingreso
+        </h1>
+      </div>
+      <img
+        class="mx-auto d-block logo m-4"
+        src="/img/fapasa.png"
+        alt="Logo"
+      />
+      <div class="card-body">
+        <form action="/auth/signin" method="POST">
+          <div class="mb-3">
+            <label for="usuario">Usuario:</label>
+            <input
+              type="text"
+              class="form-control bg-dark text-white"
+              name="usuario"
+              placeholder="Usuario"
+              autofocus
+            />
+          </div>
+          <div class="mb-3">
+            <label for="passswore">Password:</label>
+            <input
+              type="password"
+              class="form-control bg-dark text-white"
+              name="password"
+              placeholder="Password"
+            />
+          </div>
+          <button class="btn btn-success btn-block">
+            Ingresar
+          </button>
+        </form>
+      </div>
+
+   
+    </div>
+  </div>
+</div>

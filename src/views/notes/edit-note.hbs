@@ -1,0 +1,105 @@
+{{#each errors}}
+  <div class="alert alert-danger alert-dismissible fade show" role="alert">
+    {{text}}
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+{{/each}}
+<div class="col-md-4 mx-auto">
+  <div class="card">
+    <div class="card-header bg-dark text-center">
+      <h3 class="text-white">Datos del Medico</h3>
+    </div>
+    <div class="card-body text-right">
+        <form action="/notes/edit-note/{{note._id}}?_method=PUT" method="POST">
+        <input type="hidden" name="_method" value="PUT" />
+        <div class="mb-3">
+          <label for="title">Nombre</label>
+          <input
+            type="text"
+            name="title"
+            class="form-control"
+            placeholder="Title"
+            value="{{note.title}}"
+            readonly
+          />
+
+        </div>
+
+                <div class="mb-3">
+          <label for="description">Apellido</label>
+            <input
+            type="text"
+            name="description"
+            class="form-control"
+            placeholder="Cantidad"
+            value = "{{note.description}}"
+               readonly
+          />
+        </div>
+        <div class="mb-3">
+          <label for="description">Registro</label>
+            <input
+            type="text"
+            name="registro"
+            class="form-control"
+            value = "{{note.registro}}"
+            readonly
+          />
+        </div>
+        <div class="mb-3">
+          <label for="description">Celular</label>
+            <input
+            type="text"
+            name="celular"
+            class="form-control"
+            value = "{{note.celular}}"
+            readonly
+          />
+        </div>
+        <div class="mb-3">
+          <label for="description">Email</label>
+            <input
+            type="text"
+            name="email"
+            class="form-control"
+            value = "{{note.email}}"
+            readonly
+          />
+        </div>
+        <div class="mb-3">
+          <label for="description">Direccion</label>
+            <input
+            type="text"
+            name="direccion"
+            class="form-control"
+            value = "{{note.direccion}}"
+            readonly
+          />
+        </div>
+        <div class="mb-3">
+          <label for="description">calle</label>
+            <input
+            type="text"
+            name="calle"
+            class="form-control"
+            value = "{{note.calle}}"
+            readonly
+          />
+        </div>
+        <div class="mb-3">
+          <label for="description">Ciudad o Barrio</label>
+            <input
+            type="text"
+            name="barrio"
+            class="form-control"
+            value = "{{note.barrio}}"
+            readonly
+          />
+        </div>
+                      <a href="/notes"><i class="fas fa-undo" style="color: rgb(243, 15, 15);"></i></a>
+      </form>
+    </div>
+  </div>
+</div>

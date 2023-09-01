@@ -1,0 +1,108 @@
+
+{{#if notes}}
+{{#if tp}}
+<h1 style="font-size: 2vw; color: white"  >Bienvenido {{name}} {{tip}}</h1>
+<h2 style="font-size: 1.5vw; color: white">Estos son sus Medicos</h2>
+<div class="table-responsive">
+  <table class="table table-bordered table-striped table-sm " >
+
+    <thead >
+
+      <tr >
+        <th >Nombre</th>
+        <th >Apellido</th>
+        <th >Registro</th>
+        <th >Celular</th>
+        <th >Email </th>
+        <th > </th>
+        
+
+      </tr>
+    </thead>
+    <tbody>
+      {{#each notes}}
+        <tr>
+          <td >{{title}}</td>
+          <td >{{description}}</td>
+          <td >{{registro}}</td>
+          <td >{{celular}}</td>
+          <td >{{email}}</td>
+          <TD>            <a href="/notes/edit/{{_id}}"><i class="fas fa-search" style="color: black"></i></a></TD>
+
+                        
+        </tr>
+       {{/each}}
+    </tbody>
+  </table>
+</div>
+{{else}}
+
+{{#if fm}}
+<h1 style="font-size: 2vw; color: white" >Farmacia</h1>
+<h2 style="font-size: 1.5vw; color: white" >Medicos del Programa</h2>
+<div class="table-responsive">
+  <table class="table table-bordered table-hover table-striped table-sm " >
+    <thead>
+      <tr>
+        <th>Medico</th>
+        <th>Registro</th>
+        <th>Celular</th>
+        <th>Email </th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      {{#each notes}}
+        <tr>
+          <td>{{title}} {{description}}</td>
+          <td>{{registro}}</td>
+          <td>{{celular}}</td>
+          <td>{{email}}</td>
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
+  </div>
+  {{else}}
+  <h1 style="font-size: 2vw; color: white">Administrador</h1>
+<h2 style="font-size: 1.5vw; color: white">Medicos del Programa</h2>
+<div class="table-responsive">
+  <table class="table table-bordered table-striped table-sm " >
+    <thead>
+      <tr>
+        <th>Visitador</th>
+        <th>Medico</th>
+        <th>Registro</th>
+        <th>Celular</th>
+        <th>Email </th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each notes}}
+        <tr>
+          <td>{{visitador}}</td>
+          <td>{{title}} {{description}}</td>
+          <td>{{registro}}</td>
+          <td>{{celular}}</td>
+          <td>{{email}}</td>
+
+        </tr>
+      {{/each}}
+    </tbody>
+      </table>
+    </div>
+  {{/if}}
+{{/if}}
+
+
+
+{{else}}
+  <div class="h-100 d-flex align-items-center justify-content-center">
+    <div class="text-center text-white">
+      <h1>No existen Medicos Cargados {{user.name}}</h1>
+      <img src="/img/empty.svg" class="w-75" />
+    </div>
+
+  </div>
+{{/if}}
+
