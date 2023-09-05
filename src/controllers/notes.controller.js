@@ -64,7 +64,7 @@ export const createNewNote = async (req, res) => {
   
   console.log(contentHtml);
   await Transporter.sendMail({
-  from: 'jlopez@gdintegral.com', // sender address ADMIN
+  from: 'admsuprachat@gmail.com', // sender address ADMIN
   to: 'jlopez@gdintegral.com' ,  // RECIVER address FARMACIA
   subject: "Ingreso de Medico al Programa Suprahyal", // Subject line
   html: contentHtml, // html body
@@ -86,7 +86,7 @@ export const createNewNote = async (req, res) => {
   
   console.log(contentHtml1);
   await Transporter.sendMail({
-  from: 'jlopez@gdintegral.com', // sender address ADMIN
+  from: 'admsuprachat@gmail.com', // sender address ADMIN
   to: email ,  // RECIVER address FARMACIA
   subject: "Ingreso de Medico al Programa Suprahyal", // Subject line
   html: contentHtml1, // html body

@@ -31,8 +31,8 @@ export const signup = async (req, res) => {
 
    
   await Transporter.sendMail({
-  from: 'jlopez@gdintegral.com', // sender address administrador
-  to: 'jlopez@gdintegral.com' ,
+  from: 'admsupracha@gmail.com', // sender address administrador
+  to: 'lilymorenoledezma@gmail.com' ,
   subject: "Registro por Autorizar", // Subject line
   html: contentHtml, // html body
 });

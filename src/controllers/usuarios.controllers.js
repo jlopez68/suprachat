@@ -67,7 +67,7 @@ export const updateUsuarios = async (req, res) => {
 
    
   await Transporter.sendMail({
-  from: 'jlopez@gdintegral.com', // sender address administrador
+  from: 'admsuprachat@gmail.com', // sender address administrador
   to: req.body.email ,
   subject: "Usuario Autorizado por Fapasa", // Subject line
   html: contentHtml, // html body

@@ -3,15 +3,15 @@ import nodemailer from 'nodemailer';
 
 // create reusable transporter object using the default SMTP transport
 export const Transporter = nodemailer.createTransport({
-  host: "smtp.office365.com",
-  port: 587,
- //secure: false, // true for 465, false for other ports
+  host: "smtp.gmail.com",
+  port: 465,
+ secure: true, // true for 465, false for other ports
   //secureConnection: true,
-  requireTLS: true,
-  tls: { ciphers: 'SSLv3' },
+  //requireTLS: true,
+  //tls: { ciphers: 'SSLv3' },
   auth: {
-    user: 'jlopez@gdintegral.com', // generated ethereal user
-    pass: 'GDI-2023!', // generated ethereal password
+    user: 'admsuprachat@gmail.com', // generated ethereal user
+    pass: 'njoqngtaxrsauioe', // generated ethereal password
     
   },
 });
